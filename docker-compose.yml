@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+# mongodb-server:
+#  build: 
+#   context: database
+#   dockerfile: Dockerfile
+#  command: mongod --smallfiles
+#https://codefresh.io/docs/docs/yaml-examples/examples/import-data-to-mongodb/
+  mongodb:
+    image: mongo
+    ports:
+      - 27017:27017      
+      
+  mongo_seed:
+   build: 
+    context: database
+    dockerfile: Dockerfile
+   links:
+     - mongodb
+  
+networks:
+ backend:
+  driver: bridge

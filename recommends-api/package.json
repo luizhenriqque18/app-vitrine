@@ -1,0 +1,20 @@
+{
+  "name": "recommends-api",
+  "version": "1.0.0",
+  "description": "fornecer a lista de recomendações para serem exibidas nas vitrines de recomendação que serão exibidas nos sites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
+  },
+  "author": "luizhenriqque15",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.8.0",
+    "nodemon": "^2.0.6",
+    "sucrase": "^3.16.0"
+  }
+}

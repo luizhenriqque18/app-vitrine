@@ -1,0 +1,15 @@
+body, h1, h2, h3, h4, h5, p, ul, figure {
+    padding: 0;
+    margin: 0;
+} 
+
+
+.carousel {
+    background-color: red;
+}
+
+.carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
